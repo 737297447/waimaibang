@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/three_spance_bg"
+    android:clickable="false"
+    android:focusable="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/three_next_button"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:layout_above="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/u24"
+        android:gravity="center"
+        android:text="开启"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/three_liangxiaoshi_layout"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/three_gengyuan_layout"
+        android:layout_marginRight="12dp" >
+
+        <ImageView
+            android:id="@+id/three_liangxiaoshi_image"
+             android:layout_width="140dip"
+            android:layout_height="60dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/three_liangxiaoshi_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="16dp"
+            android:text="两小时车程"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/three_liangxiaoshi_check"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/three_liangxiaoshi_image"
+            android:src="@drawable/renwumoban_danxuanborder_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/three_gengyuan_layout"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="110dp" >
+
+        <ImageView
+            android:id="@+id/three_gengyuan_image"
+            android:layout_width="140dip"
+            android:layout_height="60dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/three_gengyuan_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="16dp"
+            android:text="更远"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/three_check_gengyuan"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/three_gengyuan_image"
+            android:src="@drawable/renwumoban_danxuanborder_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/three_chengnei_layout"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/three_liangxiaoshi_layout"
+        android:layout_marginTop="25dp" >
+
+        <ImageView
+            android:id="@+id/three_chengnei_image"
+            android:layout_width="120dip"
+            android:layout_height="60dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/three_chengnei_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="16dp"
+            android:text="城内"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/three_chengnei_check"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/three_chengnei_image"
+            android:src="@drawable/renwumoban_danxuanborder_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/three_yixiaoshi_layout"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/three_gengyuan_layout"
+        android:layout_alignTop="@+id/three_liangxiaoshi_layout"
+        android:layout_marginTop="58dp" >
+
+        <ImageView
+            android:id="@+id/three_yixiaoshi_image"
+            android:layout_width="120dip"
+            android:layout_height="60dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/three_yixiaoshi_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="16dp"
+            android:text="一小时车程"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/three_yixiaoshi_check1"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/three_yixiaoshi_image"
+            android:src="@drawable/renwumoban_danxuanborder_normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

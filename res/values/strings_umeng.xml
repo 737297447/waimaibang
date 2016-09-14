@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="channelid">360</string>
+</resources>
+<!--    360:360安卓    ID = 68、77
+    	Baidu:百度安卓
+    	91:91安卓 ID = 128
+    	Yingyongbao:应用宝安卓 ID = 72
+    	Wandoujia:豌豆荚安卓
+    	Anzhuo:安卓市场
+    	Xiaomi:小米APP下载
+    	Gfan:机锋
+    	Huawei:华为
+    	Oppo:OPPO
+    	Meizu:魅族
+    	Nduo：N多
+    	Lenovo:联想
+    	Mumayi:木蚂蚁
+    	Chunhua:春华 ID = 48、49、50
+    	Weibo：微博粉丝通 ID = 73、120、121
+    	Samsung：三星应用商店
+    	Letv:乐视应用市场
+    	Guangdiantong：广点通 ID = 122、123、124
+    	
+    	-->

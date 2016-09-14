@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/one_spance_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/one_next_button"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/u24"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3.5" >
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="0.5" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="0dip"
+                android:layout_height="160dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/one_image_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="140dip"
+                    />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="情侣"
+                    android:textColor="#ea7f00"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/one_danshen_selcect1"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_above="@+id/textView1"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/renwumoban_danxuanborder_normal" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="0.5" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="0dip"
+                android:layout_height="160dip"
+                android:layout_weight="1"
+                android:onClick="twoClick" >
+
+                <ImageView
+                    android:id="@+id/one_image_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="140dip"
+                    />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="单身"
+                    android:textColor="#ea7f00"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/one_danshen_selcect2"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_above="@+id/textView2"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/renwumoban_danxuanborder_normal" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal"
+            android:weightSum="3.5" >
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="0.5" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="0dip"
+                android:layout_height="160dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/one_image_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="140dip"
+                    />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="闺蜜"
+                    android:textColor="#ea7f00"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/one_danshen_selcect4"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_above="@+id/textView4"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/renwumoban_danxuanborder_normal" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="0.5" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="0dip"
+                android:layout_height="160dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/one_image_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="140dip"
+                     />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="群体"
+                    android:textColor="#ea7f00"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/one_danshen_selcect3"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_above="@+id/textView3"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/renwumoban_danxuanborder_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

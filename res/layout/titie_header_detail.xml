@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/title_bar_left"
+                android:layout_width="44.5dip"
+                android:layout_height="49.5dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="onClickLiftMenu"
+                android:paddingLeft="11.0dip"
+                android:paddingRight="11.0dip"
+                android:src="@drawable/groups_title_bar_back_icon" />
+            <ImageView
+                android:id="@+id/title_bar_right"
+                android:layout_width="45.5dip"
+                android:layout_height="23.5dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="11.0dip"
+                android:paddingRight="11.0dip"
+                android:visibility="gone"
+                android:src="@drawable/contact_setting_icon" />
+            <TextView
+                android:id="@+id/title_bar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.lingdian.waimaibang.tools.CircleImageView
+                android:id="@+id/user_ima"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/title_bar_text"
+                android:src="@drawable/touxiang_moren"
+                 />
+
+        </RelativeLayout>
+           <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/huise" />
+        
+    </LinearLayout>
+
+</LinearLayout>

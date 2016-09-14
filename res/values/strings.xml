@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">外卖帮</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_splash">外卖帮</string>
+    <string name="wanfa">玩法</string>
+    <string name="mudidi">目的地</string>
+    <string name="jingxuan">精选</string>
+    <string name="wo">我</string>
+    <string name="zhoubian">周边</string>
+    <string name="shangpin">商品</string>
+    <string name="title_activity_xin_sheng_dao_hang_fragment">XinShengDaoHangFragment</string>
+    <string name="title_activity_fa_xian_fragment">FaXianFragment</string>
+    <string name="tongzhi">通知</string>
+    <string name="dongtai">动态</string>
+    <string name="title_activity_tong_zhi">TongZhiActivity</string>
+    <string name="title_activity_dong_tai">DongTaiActivity</string>
+    <string name="title_activity_hu_dong_fragment2">HuDongFragment2</string>
+    <string name="dangqianjieyue">当前借阅</string>
+    <string name="jieyuelishi">借阅历史</string>
+    <string name="weizhangjiaokuan">违章缴款</string>
+    <string name="title_activity_dang_qian_jie_yue_fragment">DangQianJieYueFragment</string>
+    <string name="title_activity_jie_yue_li_shi_fragment">JieYueLiShiFragment</string>
+    <string name="title_activity_wei_zhang_jiao_kuan_fragment">WeiZhangJiaoKuanFragment</string>
+    <string name="title_activity_ben_guan_gai_kuang">BenGuanGaiKuangActivity</string>
+    <string name="benguangaikuang">本馆概况</string>
+    <string name="lishiyange">历史沿革</string>
+    <string name="guancangbuju">馆藏布局</string>
+    <string name="guizhangzhidu">规章制度</string>
+    <string name="kaifangshijian">开放时间</string>
+    <string name="title_activity_li_shi_yan_ge">LiShiYanGeActivity</string>
+    <string name="title_activity_guan_cang_bu_ju">GuanCangBuJuActivity</string>
+    <string name="title_activity_gui_zhang_zhi_du">GuiZhangZhiDuActivity</string>
+    <string name="title_activity_kai_fang_shi_jian">KaiFangShiJianActivity</string>
+    <string name="suijixuanzuo">随机选座</string>
+    <string name="shuziziyuan">数字资源</string>
+    <string name="guancangmulu">馆藏目录</string>
+    <string name="tututouxi">图图游戏</string>
+    <string name="shifanshengdushuwang">师范生读书网</string>
+    <string name="guanjihujieziyuan">馆际互借资源</string>
+    <string name="zizhuwenyin">自助文印</string>
+    <string name="tushuguanweixin">图书馆微信</string>
+    <string name="tuqingziyuan">图请资源</string>
+    <string name="shiyongziyuan">试用资源</string>
+
+</resources>

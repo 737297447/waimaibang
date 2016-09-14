@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lingdian.waimaibang"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-feature android:name="android:hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 高德地图权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- BmobPush SDK权限 -->
+    <permission
+        android:name="cn.bmob.permission.push"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <uses-permission android:name="cn.bmob.permission.push" />
+    <!-- 添加自定义的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 电话短信 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="com.lingdian.waimaibang.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <!-- 高德地图SDK 开发板 
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="16f619d3bdf928c57d62cbdf3bd0c355" />
+-->
+        <!--
+               高德地图SDK 正式版 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="3082bd9a042693d44b8a826490d3bda6" />
+        
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!--
+        *******************友盟start******************* 
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5625e1c767e58ec61400035b" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="@string/channelid" />
+        -->
+        <!-- *******************友盟end******************* -->
+
+        <activity
+            android:name="com.lingdian.waimaibang.activity.WelcomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lingdian.waimaibang.activity.GuideActivity" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <!-- *******************外卖帮*******start***** -->
+        <activity
+            android:name="com.lingdian.waimaibang.activity.WebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.waimai.ElmFenleiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.waimai.MeituanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.waimai.BaiduActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.waimai.XcfWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.waimai.XcfWebActivity1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.waimai.XcfSearchWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.waimai.YedianActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.waimai.BigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        
+        
+        <!-- *******************外卖帮****end******** -->
+        <activity
+            android:name="com.lingdian.waimaibang.fragment.waimai.PinYeshiFragment"
+            android:label="@string/title_activity_xin_sheng_dao_hang_fragment"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.fragment.waimai.WimaiMainFragment"
+            android:label="@string/title_activity_fa_xian_fragment"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.fragment.TongZhiFragment"
+            android:label="@string/title_activity_tong_zhi"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.fragment.DongTaiFragment"
+            android:label="@string/title_activity_dong_tai"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.fragment.HuDongFragment2"
+            android:label="@string/title_activity_hu_dong_fragment2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.fragment.DangQianJieYueFragment"
+            android:label="@string/title_activity_dang_qian_jie_yue_fragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.fragment.JieYueLiShiFragment"
+            android:label="@string/title_activity_jie_yue_li_shi_fragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.fragment.WeiZhangJiaoKuanFragment"
+            android:label="@string/title_activity_wei_zhang_jiao_kuan_fragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.view.MainTopRightDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleTop" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.wanfa.WanfaDetailActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.GalleryPicActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.DingzhiActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.wanfa.WanfaDetailMenuActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.JingdianAboutActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.jingxuan.JingxuanDetailActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.view.JingxuanRightToLeftDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleTop" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.wo.LoginActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.wo.RegistActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.GerenInfoActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.ActivitySelectCity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.write.CameraActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.AmapActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.wo.SettingActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.wo.EditZiliaoActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.wo.EditPasswordActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.write.WriteWanfaActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.muzhi.camerasdk.FilterImageActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.muzhi.camerasdk.CropperImageActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.write.WriteWanfaSecondActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.write.WriteSuccessActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.wo.NoticeDetailActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.jingxuan.JingxuanDetailWebActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.jingxuan.JingxuanShangpinlActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.jingxuan.JingxuanPinglunActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.lingdian.waimaibang.activity.AdminImgActivity"
+            android:label="@string/title_activity_kai_fang_shi_jian"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <!-- MOB Share SKD -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="cn.sharesdk.demo.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- QQ登陆 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1104624628" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        
+        
+        
+         <!-- BMOB消息推送 -->
+        
+        <service
+            android:name="cn.bmob.push.lib.service.PushService"
+            android:exported="true"
+            android:label="PushService"
+            android:permission="cn.bmob.permission.push"
+            android:process="cn.bmob.push" >
+            <intent-filter>
+                <action android:name="cn.bmob.push.lib.service.PushService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="cn.bmob.push.PushReceiver" >
+            <intent-filter android:priority="2147483647" >
+ <!-- 优先级加最高 -->
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 解锁完成后会调用 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!-- 监听网络连通性 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 第四部中创建的消息接收器，在这里进行注册 -->
+        <receiver android:name="com.lingdian.waimaibang.activity.MyPushMessageReceiver" >
+            <intent-filter>
+                <action android:name="cn.bmob.push.action.MESSAGE" />
+            </intent-filter>
+        </receiver>
+         <service android:name="com.lingdian.waimaibang.activity.NotificationService" />
+        
+        
+    </application>
+
+</manifest>

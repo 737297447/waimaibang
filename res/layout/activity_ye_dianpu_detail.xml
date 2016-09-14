@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titie_header_back" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/yeshi_img"
+                android:layout_width="fill_parent"
+                android:layout_height="200dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/waimaibang_moren_pic" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:text="商家简介:"
+                    android:textColor="@color/c333333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/huise" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/yeshi_jianjie"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:text="肯定是福建省电话费"
+                    android:textColor="@color/c666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/huise" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:text="商家推荐:"
+                    android:textColor="@color/c333333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/huise" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/yeshi_tuijian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:text="肯定是福建省电话费"
+                    android:textColor="@color/c666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            
+              <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/huise" />
+            
+             <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="50dip"
+                android:background="@color/huise" />
+            
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dip"
+                android:background="@color/white"
+                android:gravity="center" 
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/yeshi_tel"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:text="拨打电话"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:paddingTop="5dip"
+                    android:gravity="center"
+                    android:paddingBottom="5dip"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:background="@drawable/yellow_chengfangxing_bg"
+                    android:textColor="@color/c333333"
+                    android:textSize="16sp" />
+                
+                
+                <TextView
+                     android:id="@+id/yeshi_daohang"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="导航"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:paddingTop="5dip"
+                    android:gravity="center"
+                    android:paddingBottom="5dip"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/yellow_chengfangxing_bg"
+                    android:textColor="@color/c333333"
+                    android:textSize="16sp" />
+                
+            </LinearLayout>
+              <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/huise" />
+            
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

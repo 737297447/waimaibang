@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="6" >
+
+        <LinearLayout
+            android:id="@+id/camera_close"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:src="@drawable/icon_minute_plan_finish" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:gravity="center" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/next_layout"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="30dip"
+                android:background="@drawable/orange_bg"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/huise" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/my_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="跟谁玩"
+                    android:textColor="@color/huise"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5" >
+
+                <LinearLayout
+                    android:id="@+id/write_layout_1"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="闺  蜜"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_1"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_2"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="情  侣"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_2"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_3"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="朋  友"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_3"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5" >
+
+                <LinearLayout
+                    android:id="@+id/write_layout_4"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="单  身"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_4"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_5"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="亲  子"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_5"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_6"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="团  体"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_6"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5" >
+
+                <LinearLayout
+                    android:id="@+id/write_layout_7"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="长  辈"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_7"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="情侣"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="朋友"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="10dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="玩什么"
+                    android:textColor="@color/huise"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5" >
+
+                <LinearLayout
+                    android:id="@+id/write_layout_8"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="轻  奢"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_8"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_9"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="美  食"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_9"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_10"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                      android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="浪  漫"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_10"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5" >
+
+                <LinearLayout
+                    android:id="@+id/write_layout_11"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="古  镇"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_11"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_12"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="清  净"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_12"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_13"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                      android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="摄  影"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_13"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5" >
+
+                <LinearLayout
+                    android:id="@+id/write_layout_14"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="海  边"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_14"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_15"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="温  泉"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_15"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_16"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                      android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="文  艺"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_16"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5" >
+
+                <LinearLayout
+                    android:id="@+id/write_layout_17"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="户  外"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_17"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_18"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="露  营"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_18"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_19"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                      android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="游  山"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_19"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5" >
+
+                <LinearLayout
+                    android:id="@+id/write_layout_20"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热  闹"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_20"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_21"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="玩  水"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_21"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_22"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                      android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="复  古"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_22"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5" >
+
+                <LinearLayout
+                    android:id="@+id/write_layout_23"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="避  暑"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_23"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_24"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="古  迹"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_24"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_25"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                      android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="逛  店"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_25"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5" >
+
+                <LinearLayout
+                    android:id="@+id/write_layout_26"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="赏  花"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_26"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_27"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="滑  雪"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_27"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_28"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                      android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="秋  叶"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_28"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5" >
+
+                <LinearLayout
+                    android:id="@+id/write_layout_29"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/write_wanfa_huise_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/write_text_29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="夜生活"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_29"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/write_layout_30"
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:id="@+id/write_text_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="特色街"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/write_img_30"
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="25dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                      android:gravity="center"
+                      android:visibility="invisible"
+                    android:background="@drawable/write_wanfa_huise_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="团体"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="8dip"
+                        android:layout_height="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/telmeeting_titlebar_add_normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+            
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/huise" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/tab_unpressed" />
+
+                <com.lingdian.waimaibang.view.CloudEditText
+                    android:id="@+id/add_tag_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                     android:minHeight="50dip"
+                    android:hint="新增标签，换行分隔"
+                    android:textColor="@color/gray"
+                    android:background="#f0f0f0"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/huise" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/tab_unpressed" />
+
+                <EditText
+                    android:id="@+id/xiaofei_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:hint="花费"
+                    android:background="#f0f0f0"
+                    android:textColor="@color/gray"
+                    android:digits="1234567890." 
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/huise" />
+             <View
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                 />
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

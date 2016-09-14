@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/big_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:scaleType="fitStart"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/good_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="陕西凉皮"
+                android:layout_margin="10dip"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/white" />
+            
+            <TextView
+                 android:id="@+id/good_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="陕西凉皮款式大方了黑色的合法计划地方斯蒂芬手机的防护"
+                android:layout_margin="10dip"
+                 android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

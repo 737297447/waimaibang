@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="50dip"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup_all"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_margin="10dip"
+            android:background="@drawable/tab_bg"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/radio_recomm_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@drawable/wp_text_selector"
+                android:textSize="15.0sp" />
+
+            <RadioButton
+                android:id="@+id/rb_2"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/radio_new_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="景点"
+                android:textColor="@drawable/wp_text_selector"
+                android:textSize="15.0sp" />
+
+            <RadioButton
+                android:id="@+id/rb_3"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/radio_new_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="住宿"
+                android:textColor="@drawable/wp_text_selector"
+                android:textSize="15.0sp" />
+
+            <RadioButton
+                android:id="@+id/rb_4"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/radio_new_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="美食"
+                android:textColor="@drawable/wp_text_selector"
+                android:textSize="15.0sp" />
+
+            <RadioButton
+                android:id="@+id/rb_5"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/radio_topic_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="其他"
+                android:textColor="@drawable/wp_text_selector"
+                android:textSize="15.0sp" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/huise" />
+
+        <ListView
+            android:id="@+id/fragment_quanbu_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/wanfa_dingzhi"
+        android:layout_width="30dip"
+        android:layout_height="80dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/dingzhi_icon" />
+
+</RelativeLayout>

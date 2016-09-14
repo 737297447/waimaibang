@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_title"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/title_bar_left_layout"
+            android:layout_width="50dip"
+            android:layout_height="50dip" >
+
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/xcf_bg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <com.lingdian.waimaibang.view.ClearEditText
+                android:id="@+id/filter_edit"
+                android:layout_width="0dip"
+                android:layout_height="30dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="11dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/crm_secrch_layout_bg"
+                android:drawableLeft="@drawable/oa_search_bar_icon_normal"
+                android:hint="请输入菜谱、食材"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="15.0dip" />
+
+            <TextView
+                android:id="@+id/btn_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="搜索"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/huise"/>
+    
+
+</LinearLayout>

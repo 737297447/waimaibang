@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="73dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:background="#ff0000"
+            android:tag="back"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/devicelist_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_delete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/front"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="front"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/xiaoxi_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/oa_selecter_ent_white_blue"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:weightSum="2" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_marginRight="25dip"
+                            android:layout_weight="1" >
+
+                            <ImageView
+                                android:id="@+id/xiaoxi_isread_pic"
+                                android:layout_width="10dip"
+                                android:layout_height="10dip"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/poing_red" />
+
+                            <TextView
+                                android:id="@+id/xiaoxi_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toLeftOf="@+id/xiaoxi_time"
+                                android:layout_toRightOf="@+id/xiaoxi_isread_pic"
+                                android:text=""
+                                android:textColor="#666666"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/xiaoxi_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:text=""
+                                android:textColor="#666666"
+                                android:textSize="10sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/xiaoxi_neirong"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_marginBottom="5dip"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="25dip"
+                            android:layout_marginTop="10dip"
+                            android:layout_weight="1"
+                            android:maxLines="2"
+                            android:text=""
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/icon_find_jiantou" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

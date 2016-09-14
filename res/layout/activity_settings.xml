@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:id="@+id/setting_main_layout"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titie_header_back" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/man_or_woman_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/huise" />
+
+            <LinearLayout
+                android:id="@+id/layout_touxiang"
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:background="@drawable/oa_selecter_ent_white_blue"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:src="@drawable/user_1" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:text="头像"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.lingdian.waimaibang.tools.CircleImageView
+                    android:id="@+id/user_img"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:src="@drawable/mrtoux" />
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/icon_find_jiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="45dip"
+                android:layout_marginTop="-1dip"
+                android:background="@color/huise" />
+
+            <LinearLayout
+                android:id="@+id/layout_jibenziliao"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/oa_selecter_ent_white_blue"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:src="@drawable/ziliao" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:text="基本资料"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/icon_find_jiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="45dip"
+                android:layout_marginTop="-1dip"
+                android:background="@color/huise" />
+
+            <LinearLayout
+                android:id="@+id/layout_xiugaimima"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/oa_selecter_ent_white_blue"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:src="@drawable/xgmima" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:text="修改密码"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/icon_find_jiantou" />
+            </LinearLayout>
+
+            
+            
+            
+            
+            
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="-1dip"
+                android:background="@color/huise" />
+
+            <LinearLayout 
+                android:id="@+id/layout_admin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+            
+              <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dip"
+                android:background="@color/huise" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/oa_selecter_ent_white_blue"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:src="@drawable/wo_nonal" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:text="设置封面"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/icon_find_jiantou" />
+            </LinearLayout>
+            
+              <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="-1dip"
+                android:background="@color/huise" />
+            </LinearLayout>
+            
+            
+            
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="40dip"
+                android:background="@color/huise" />
+
+            <LinearLayout
+                android:id="@+id/layout_tuichu"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/oa_selecter_ent_white_blue"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退出登录"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="-1dip"
+                android:background="@color/huise" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
